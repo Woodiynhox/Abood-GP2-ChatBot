@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import openai
 import os
 from dotenv import load_dotenv
+#from openai import OpenAI
 
 load_dotenv()  # Load the environment variables
 
@@ -107,6 +108,8 @@ def chatbot():
     try:
         print("Updated custom_data being sent to OpenAI:")
         print(custom_data1)
+
+        # Make the OpenAI API call
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
@@ -123,12 +126,17 @@ def chatbot():
             ],
             max_tokens=500,
         )
-        reply = response['choices'][0]['message']['content']
+
+        # Extract the reply
+        reply = response.choices[0].message.content
         print(f"Chatbot Reply: {reply}")
         return jsonify({"reply": reply})
+
     except Exception as e:
         print(f"Error: {e}")
-        return jsonify({"error": "Failed to fetch chatbot response"}), 500
+        return jsonify({"error": str(e)}), 500
+
+
 
 
 if __name__ == "__main__":
