@@ -44,12 +44,12 @@ def chatbot():
     user_message = data.get("message", "")
 
     custom_data1 = """
-        You are a chatbot for our university advising system. Use this information:
+    You are a chatbot for our university advising system. Use this information:
 
-        - Advisors:
+    - Advisors:
         - Dr. Mostafa Ibrahim:
             - Office Hours: Sunday to Wednesday, 10 AM to 2 PM
-            - Office Location: Building 5, Room 213
+            - Office Location: Building 2089, Room 213
             - TEACHES computer Architecture CS228, Logic Design CS120, and Discrete Structures CS114
             
         - Dr. Mohammed Aljammaz:
@@ -57,13 +57,13 @@ def chatbot():
             - Office Location: Building 3, Room 230
             - TEACHES Software Security CS442 and Computer Networks CS330
 
-        - Student:
+    - Students:
         - Abdullah Alhagbani:
             - Soon-to-be graduate in Computer Science
             - Contact: Riyadh, Saudi Arabia | +966(54-232-1333) | Abdullah.Alhagbani10@gmail.com
             - LinkedIn: [Abdullah's LinkedIn](https://www.linkedin.com/in/abdullah-alhagbani-b9240b23b/)
             - GPA: 4.17
-            - Skills: 
+            - Skills:
                 • Proficient in C++, SQL, and JavaScript
                 • Database management and optimization
                 • Frontend development using HTML, CSS, JS
@@ -95,7 +95,145 @@ def chatbot():
                 • Full-stack online store with React.js, Node.js, Express.js, and MongoDB
                 • Robot game for improving understanding of class "enum"
             - Languages: Advanced English
+
+    - Computer Science Department Information:
+
+        - Program Overview:
+            - Historical Context:
+                - Established in 1998, initially as part of the College of Social Sciences.
+                - Converted into a dedicated College of Computer and Information Sciences in 2002, emphasizing alignment with Saudi Arabia's national development plans and technological needs.
+            - Vision:
+                - To equip students with cutting-edge knowledge and skills in computer science to thrive in a rapidly evolving technological landscape.
+
+        - Program Mission and Objectives:
+            - Mission:
+                - Provide foundational and advanced knowledge in computer science.
+                - Foster an environment aligned with international standards, emphasizing research and education.
+            - Objectives:
+                - Develop skilled professionals to solve diverse computing challenges.
+                - Prepare graduates for advanced research and studies.
+                - Promote ethical and social responsibility among computer scientists.
+
+        - Student Outcomes:
+            - Knowledge and Understanding:
+                - Grasp core computing concepts, tools, and societal impacts.
+            - Skills:
+                - Analyze complex problems and design solutions.
+                - Communicate effectively in professional contexts.
+            - Values:
+                - Exhibit ethical professionalism and teamwork capabilities.
+
+        - Admission Criteria:
+            - High school certificate (or equivalent) obtained within the last five years.
+            - Good conduct and medical fitness.
+            - Successful completion of tests/interviews specified by the university.
+
+        - Curriculum Structure:
+            - Total Credit Hours: 167.
+            - Components:
+                - Institutional Requirements: Core skills like English and ethics (26 credit hours).
+                - College and Program-Specific Courses: In-depth computer science topics, including foundational and advanced subjects.
+                - Capstone Projects and Internships: Hands-on experience through two major projects and internships.
+
+        - Key Courses and Topics:
+            - Foundational Courses:
+                - CS1110 - Introduction to Computer Science: Overview of the field and problem-solving basics.
+                - CS1100 - Discrete Structures: Mathematical foundations like set theory and logic.
+            - Core Subjects:
+                - CS1141 - Object-Oriented Programming: Concepts like encapsulation, inheritance, and polymorphism.
+                - CS1242 - Data Structures: Implementation of data structures using Java and algorithm complexity analysis.
+                - CS1221 - Computer Architecture: Instruction sets, memory organization, and processor design.
+            - Advanced Topics:
+                - CS1360 - Artificial Intelligence: Problem-solving strategies, reasoning, and machine learning.
+                - CS1372 - Information Security: Cryptography, network security, and governance.
+            - Elective Courses:
+                - CS1465 - Neural Networks and Deep Learning: Covers architectures like CNNs and autoencoders.
+                - CS1476 - Digital Forensics: Investigative techniques for cybersecurity and legal scenarios.
+
+        - Capstone and Practical Training:
+            - Graduation Projects (CS1492 & CS1493): Emphasize research, system development, and comprehensive skill application.
+            - Internship (Practical Training): Provides exposure to real-world challenges and professional environments.
+
+        - Program Highlights:
+            - Focus on advanced technologies like AI, machine learning, and cybersecurity.
+            - Emphasis on professional development through seminars, team-based projects, and industry exposure.
+            - Offers electives tailored to industry trends, such as cloud computing, mobile development, and optimization techniques.
+
+        - Contact and Communication:
+            - Email for queries:
+                - Male Students: cs.office@imamu.edu.sa
+                - Female Students: cs.office.f@imamu.edu.sa
+            - Program Website: College of Computer and Information Sciences
+
+    - Faculty Members:
+        - Dr. Sultan Sharidah Farhan Aldera (College Dean):
+            - Assistant Professor - PhD Computer Science, University of Manchester, UK
+            - Research Interests: Machine Learning, Natural Language Processing, Health Informatics, Genomic Medicine, Bioinformatics
+            - Office Number: 2035, Office Phone Number: 0112581818
+            - Email: ssaldera@imamu.edu.sa
+        
+        - Dr. Abdullah M. Albarrak (Vice Dean):
+            - Associate Professor - PhD Computer Science, The University of Queensland, Australia
+            - Research Interests: Data Management, Data Exploration and Recommendation
+            - Office Number: SR-54, Office Phone Number: 011-2584120
+            - Email: amsbarrak@imamu.edu.sa
+
+        - Dr. Lamees Abdullah Alhazzaa (Head of Computer Science Department):
+            - Assistant Professor – PhD in Computer Science, University of Denver, Denver, CO, USA
+            - Research Interests: Software Engineering, Artificial Intelligence, IoT, HCI
+            - Office Number: 3A-236, Office Phone Number: 011-25997571
+            - Email: lahazzaa@imamu.edu.sa
+
+        - Prof. Mohamed ELARBI BOUDIHIR:
+            - Professor - PhD in Computer Science, INPL. University of Nancy France
+            - Research Interests: Artificial Intelligence, Robotics and Computer Vision
+            - Office Number: 2038, Office Phone Number: 011-2581256
+            - Email: mheboudihir@imamu.edu.sa
+
+        - Dr. Amal Slyman Alsaif:
+            - Assistant Professor - PhD Computer Science, Leeds University, UK
+            - Research Interests: Natural Language Processing, Machine Learning-AI and Arabic NLP-Corpus Linguistics
+            - Office Number: 3177, Office Phone Number: 011-2597537
+            - Email: Asmalsaif@imamu.edu.sa
+
+        - Dr. Sultan Noman Qasem Mohammed:
+            - Professor - Ph.D Computer Science, Universiti Teknologi Malaysia, Malaysia
+            - Research Interests: Artificial Intelligence, Machine Learning, Data Science and Health Informatics
+            - Office Number: 3060, Office Phone Number: 011-2586825
+            - Email: SNMohammed@imamu.edu.sa
+
+        - Dr. Abdullah Alsheddy:
+            - Associate Professor - Ph.D Computer Science, University of Essex, UK
+            - Research Interests: Artificial Intelligence, Decision Support Systems, Optimization and Metaheuristics
+            - Office Number: FR64, Office Phone Number: 01125586977
+            - Email: asheddy@imamu.edu.sa
+
+        - Dr. Eman Abdulhamid Alzaid:
+            - Assistant Professor - Ph.D Computer Science, King Saud University, Saudi Arabia
+            - Research Interests: Bioinformatics, Machine Learning
+            - Office Number: 3A-142, Office Phone Number: 0112597557
+            - Email: eazaid@imamu.edu.sa
+
+        - Dr. Tahani Fahad Albalawi:
+            - Assistant Professor - Ph.D Computer Science, Kent State University, USA
+            - Research Interests: Information Security
+            - Office Number: 3A-133, Office Phone Number: 0112597991
+            - Email: tfalbalawi@imamu.edu.sa
+
+        - Dr. Wojdan Mohammed BinSaeedan:
+            - Vice Dean of Information Technology and E-Learning Deanship
+            - Assistant Professor - Ph.D Computer Science, King Saud University, KSA
+            - Research Interests: Artificial Intelligence, Cyber Security
+            - Office Number: 3A-246, Office Phone Number: 0112597549
+            - Email: wmasaeedan@imamu.edu.sa
+
+        - Dr. Mostafa Elsayed Ahmed Ibrahim:
+            - Assistant Professor - Ph.D Computer Science, Cairo University, Egypt
+            - Research Interests: Deep Learning, Computer Vision, Wireless Sensor Networks
+            - Office Number: 2089, Office Phone Number: 0112586831
+            - Email: meibrahim@imamu.edu.sa
     """
+
 
 
     
